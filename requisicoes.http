@@ -1,0 +1,43 @@
+GET http://localhost:3000/app/test
+
+###
+
+get http://localhost:3000/app
+
+###
+
+POST http://localhost:3000/usuario
+
+###criar usuario
+
+POST http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+    "nome": "hong2",
+    "email": "hong@hong2",
+    "senha": "12345"
+}
+
+###obter todos os usuarios
+
+GET http://localhost:3000/usuario
+
+###obter por id
+
+GET http://localhost:3000/usuario/2
+
+###deletar por id
+
+DELETE http://localhost:3000/usuario/5
+
+
+###atualizar usuario
+
+PATCH  http://localhost:3000/usuario/6
+Content-Type: application/json
+
+{
+    "nome": "hong3",
+    "email": "hong@hong3"
+}
